@@ -1,0 +1,76 @@
+nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #eee;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.nav {
+    margin: 0 !important;
+}
+.nav a{
+    color: #444;
+    text-decoration: none;
+}
+.nav a:hover{
+    font-weight: bold;
+}
+.search-form {
+    padding: .5rem 1rem;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    column-gap: 5px;
+}
+.search-form .btn-sm{
+    line-height: 1;
+    font-size: 0.9rem;
+}
+.search-form input{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-top: 3px;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 1rem;
+    padding-bottom: 4px;
+}
+.cards {
+    padding: 0.75rem 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 10px;
+    margin-bottom: 2%;
+}
+.cardBody {
+    margin-top: 20px;
+}
+#people {
+    grid-template-columns: repeat(5,1fr);
+}
+#now-playing {
+    grid-template-columns: repeat(6, 1fr);
+}
+#now-playing .card-text{
+    height: 100px;
+    overflow: hidden;
+}
+.tv-show{
+    grid-template-columns: repeat(5, 1fr);
+}
+.tv-show .card-text{
+    height: 100px;
+    overflow: hidden;
+}
+#on-air-today{
+    grid-template-columns: repeat(6, 1fr);
+}
+#on-air-today .card-text{
+    height: 100px;
+    overflow: hidden;
+}
+
+@media(min-width: 765px){
+    nav {
+        grid-template-columns: 4fr 3fr;
+    }
+}
